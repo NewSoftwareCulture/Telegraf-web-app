@@ -1,0 +1,31 @@
+{
+  "name": "telegraf-web-app",
+  "version": "1.0.0",
+  "description": "Telegram bot web-app",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm run install:client && npm run install:server",
+    "install:client": "cd ./client && npm i",
+    "install:server": "cd ./server && npm i",
+    "build": "npm run build:client && npm run build:server",
+    "build:client": "cd ./client && npm run build",
+    "build:server": "cd ./server && npm run build",
+    "start:client": "cd client && npm run start",
+    "start:server": "cd server && npm run start",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "start": "npm run start:server",
+    "release": "./scripts/release.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewSoftwareCulture/Telegraf-web-app.git"
+  },
+  "keywords": [],
+  "author": "Vladislav Denisov <vlados.pochta@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NewSoftwareCulture/Telegraf-web-app/issues"
+  },
+  "homepage": "https://github.com/NewSoftwareCulture/Telegraf-web-app#readme"
+}
